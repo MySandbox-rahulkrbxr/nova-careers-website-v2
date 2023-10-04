@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Application Submitted</title>
+    {% include 'bootstrap.html' %}
+  </head>
+  <body>
+    {% include 'nav.html' %}
+    {% include 'banner.html' %}
+    <div class="container">
+      <h1 class="text-center mt-2 mb-4">
+        Nova Careers
+      </h1>
+
+      <div class="p-3 fs-4 mb-2 bg-success text-white border border-success text-center font-monospace">Your application for the role of <strong>{{job['title']}}</strong> at Nova has been submitted!</div>
+      <strong>Full Name</strong>
+      <div class="mb-2">{{application['full_name']}}</div>
+  
+      <strong>Email</strong>
+      <div class="mb-2">{{application['email']}}</div>
+  
+      <strong>LinkedIn URL</strong>
+      <div class="mb-2">{{application['linkedin_url']}}</div>
+  
+      <strong>Education</strong>
+      <div class="mb-2">{{application['education']}}</div>
+  
+      <strong>Work Experience</strong>
+      <div class="mb-2">{{application['work_experience']}}</div>
+      
+      <strong>Resume URL</strong>
+      <div class="mb-2">{{application['resume_url']}}</div>
+      </div>
+    {% include 'footer.html' %}
+  </body>
+</html>
